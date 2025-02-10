@@ -53,3 +53,7 @@ next-env.d.ts
 
 # OpenAI
 openai.key
+/checkstyle-idea.xml
+/misc.xml
+/modules.xml
+/vcs.xml
