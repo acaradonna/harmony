@@ -8,6 +8,7 @@
 /dataSources.local.xml
 
 # IDE-specific files
+.idea/*
 .idea/
 *.iml
 
@@ -57,11 +58,4 @@ openai.key
 /misc.xml
 /modules.xml
 /vcs.xml
-/sonarlint/issuestore/7/c/7c7ddd89ac3a6780ae4fa583c8406863d56d0e55
-/sonarlint/securityhotspotstore/7/c/7c7ddd89ac3a6780ae4fa583c8406863d56d0e55
-/sonarlint/issuestore/c/7/c7e9037e4c3b12726a6f85ec3bd4d578d9d6c43d
-/sonarlint/securityhotspotstore/c/7/c7e9037e4c3b12726a6f85ec3bd4d578d9d6c43d
-/sonarlint/issuestore/e/9/e97a13cdf7baf24fd2f4e43eaaeb13b20b5f4f53
-/sonarlint/securityhotspotstore/e/9/e97a13cdf7baf24fd2f4e43eaaeb13b20b5f4f53
-/sonarlint/issuestore/index.pb
-/sonarlint/securityhotspotstore/index.pb
+/sonarlint/*
