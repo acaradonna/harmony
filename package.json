@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/pro-chat": "^2.4.4",
+    "antd": "^5.23.4",
+    "antd-style": "^3.7.1",
     "next": "15.1.6",
     "openai": "^4.83.0",
     "pg": "^8.13.1",
