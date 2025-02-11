@@ -1,5 +1,4 @@
 # Current Stack
-
 ## Frontend
 - [React.js](https://react.dev/) - Frontend UI library
 - [React-Chat-Elements](https://github.com/Detaysoft/react-chat-elements) - Chat UI components
