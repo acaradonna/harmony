@@ -1,13 +1,21 @@
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { ChatMessage } from '../../../types/chatMessage';
 
-const openai = new OpenAI();
+if (!process.env.OPENAI_API_KEY) {
+    throw new Error('Missing OPENAI_API_KEY environment variable');
+}
 
-export async function POST() {
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+});
+
+export async function POST(request: Request) {
     try {
+        const { message }: { message: ChatMessage } = await request.json();
         const stream = await openai.chat.completions.create({
             model: "gpt-4-turbo-preview",
-            messages: [{ role: "user", content: "Tell me every single fact you know about GOKU, the legendary SUPER SAIYAN! I must understand this legendary foe! Fufufufu!" }],
+            messages: [{ role: message.role, content: message.content }],
             stream: true,
         });
 
