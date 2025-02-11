@@ -32,13 +32,20 @@ const ChatPage = () => {
             },
           }}
           request={async (messages) => {
-            return [{
-              content: `something something ${messages.length}`,
-              role: 'assistant',
-              id: `msg-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-              createAt: Date.now(),
-              updateAt: Date.now()
-            }];
+            const response = await fetch('/api/chat', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ messages }),
+            });
+
+            if (!response.ok) {
+              throw new Error('Failed to fetch response');
+            }
+
+            const data = await response.json();
+            return [data];
           }}
         />
       </ConfigProvider>
