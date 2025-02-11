@@ -11,7 +11,7 @@ const ChatPage = () => {
         }
         request={async (messages) => {
           return [{
-            content: `something something${messages.length}`,
+            content: `something something ${messages.length}`,
             role: 'assistant',
             id: '1',
             createAt: Date.now(),
