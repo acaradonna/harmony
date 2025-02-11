@@ -27,8 +27,8 @@ const ChatPage = () => {
           inputAreaProps={{
             placeholder: 'Ask me anything',
             value: value,
-            onChange: (e) => {
-              setValue(e);
+            onChange: (inputValue: string) => {
+              setValue(inputValue);
             },
           }}
           request={async (messages) => {

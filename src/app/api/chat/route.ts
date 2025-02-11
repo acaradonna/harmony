@@ -24,8 +24,8 @@ export async function POST(request: Request) {
       content: completion.choices[0].message.content,
       role: 'assistant',
       id: `msg-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-      createAt: Date.now(),
-      updateAt: Date.now()
+      createdAt: Date.now(),
+      updatedAt: Date.now()
     });
   } catch (error) {
     console.error(error);
