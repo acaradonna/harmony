@@ -13,7 +13,7 @@ export function ThemeToggle() {
       unCheckedChildren={<BsSun style={{ color: '#424242' }} />}
       style={{
         marginRight: 16,
-        backgroundColor: isDarkMode ? '#fcfc62' : '#fcfc62',
+        backgroundColor: isDarkMode ? '#FCBC62' : '#FCBC62',
       }}
     />
   );

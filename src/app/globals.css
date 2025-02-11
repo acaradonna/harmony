@@ -11,17 +11,17 @@
   --black: #000000;
   
   /* Theme colors */
-  --icterine: #fcfc62;
+  --icterine: #FCBC62; /* Hunyadi Yellow */
   --ivory: #feffea;
   --silver: #c9c9c9;
   --silver-2: #a3a3a3;
   --onyx: #424242;
 
   /* Highlight colors */
-  --highlight-light: #fcfc6240;
-  --highlight-dark: #fcfc6220;
-  --highlight-active-light: #fcfc6250;
-  --highlight-active-dark: #fcfc6230;
+  --highlight-light: #FCBC6240;
+  --highlight-dark: #FCBC6220;
+  --highlight-active-light: #FCBC6250;
+  --highlight-active-dark: #FCBC6230;
 
   /* Light theme */
   --background: var(--mint-green);

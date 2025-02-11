@@ -39,7 +39,8 @@ const ChatInput = ({ value, onChange, onSend, placeholder }: ChatInputProps) => 
           padding: '12px 16px',
         }}
         className="
-          hover:border-[#fcfc62] focus:border-[#fcfc62]
+          hover:border-[#FCBC62] focus:border-[#FCBC62]
+          hover:bg-[#FCBC6210] focus:bg-[#FCBC6215]
           transition-all duration-200
           shadow-sm hover:shadow-md
         "

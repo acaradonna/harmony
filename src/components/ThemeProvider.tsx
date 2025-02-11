@@ -14,7 +14,7 @@ const ThemeContext = createContext<ThemeContextType>({
 // Custom theme tokens based on the provided color scheme
 const getThemeTokens = (isDarkMode: boolean) => ({
   token: {
-    colorPrimary: '#fcfc62', // icterine
+    colorPrimary: '#FCBC62', // Hunyadi Yellow
     colorBgBase: isDarkMode ? '#424242' : '#feffea', // onyx for dark, ivory for light
     colorTextBase: isDarkMode ? '#feffea' : '#424242', // ivory for dark, onyx for light
     colorBorder: isDarkMode ? '#a3a3a3' : '#c9c9c9', // silver-2 for dark, silver for light
@@ -22,7 +22,7 @@ const getThemeTokens = (isDarkMode: boolean) => ({
     colorBgElevated: isDarkMode ? '#525252' : '#ffffff',
     borderRadius: 8,
     // Additional customizations
-    colorInfo: '#fcfc62', // icterine
+    colorInfo: '#FCBC62', // Hunyadi Yellow
     colorSuccess: '#4caf50',
     colorWarning: '#ff9800',
     colorError: '#f44336',
@@ -30,31 +30,31 @@ const getThemeTokens = (isDarkMode: boolean) => ({
     colorTextSecondary: isDarkMode ? '#c9c9c9' : '#a3a3a3', // silver for dark, silver-2 for light
     colorTextTertiary: isDarkMode ? '#a3a3a3' : '#c9c9c9', // silver-2 for dark, silver for light
     // Component specific
-    controlOutline: '#fcfc62', // icterine for focus states
+    controlOutline: '#FCBC62', // Hunyadi Yellow for focus states
     colorBgLayout: isDarkMode ? '#363636' : '#feffea', // darker onyx for dark, ivory for light
     // Selection and highlight colors
-    colorBgTextHover: isDarkMode ? '#fcfc6220' : '#fcfc6240', // icterine with opacity
-    colorBgTextActive: isDarkMode ? '#fcfc6230' : '#fcfc6250', // icterine with opacity
-    colorPrimaryBg: isDarkMode ? '#fcfc6220' : '#fcfc6240', // icterine with opacity
-    colorPrimaryBgHover: isDarkMode ? '#fcfc6230' : '#fcfc6250', // icterine with opacity
+    colorBgTextHover: isDarkMode ? '#FCBC6220' : '#FCBC6240', // Hunyadi Yellow with opacity
+    colorBgTextActive: isDarkMode ? '#FCBC6230' : '#FCBC6250', // Hunyadi Yellow with opacity
+    colorPrimaryBg: isDarkMode ? '#FCBC6220' : '#FCBC6240', // Hunyadi Yellow with opacity
+    colorPrimaryBgHover: isDarkMode ? '#FCBC6230' : '#FCBC6250', // Hunyadi Yellow with opacity
   },
   components: {
     Button: {
       primaryColor: '#424242', // onyx
-      primaryBg: '#fcfc62', // icterine
+      primaryBg: '#FCBC62', // Hunyadi Yellow
       defaultBg: isDarkMode ? '#424242' : '#feffea',
       defaultColor: isDarkMode ? '#feffea' : '#424242',
       defaultBorderColor: isDarkMode ? '#a3a3a3' : '#c9c9c9',
     },
     Switch: {
       handleBg: '#feffea', // ivory
-      colorPrimary: '#fcfc62', // icterine
-      colorPrimaryHover: '#fcfc62cc', // icterine with opacity
+      colorPrimary: '#FCBC62', // Hunyadi Yellow
+      colorPrimaryHover: '#FCBC62cc', // Hunyadi Yellow with opacity
     },
     Input: {
-      activeBorderColor: '#fcfc62', // icterine
-      hoverBorderColor: '#fcfc62cc', // icterine with opacity
-      activeShadow: '0 0 0 2px #fcfc6220', // icterine with opacity
+      activeBorderColor: '#FCBC62', // Hunyadi Yellow
+      hoverBorderColor: '#FCBC62cc', // Hunyadi Yellow with opacity
+      activeShadow: '0 0 0 2px #FCBC6220', // Hunyadi Yellow with opacity
       paddingBlock: 12,
       paddingInline: 16,
       borderRadius: 12,
@@ -63,14 +63,14 @@ const getThemeTokens = (isDarkMode: boolean) => ({
       colorBorder: isDarkMode ? '#a3a3a3' : '#c9c9c9',
     },
     Select: {
-      optionSelectedBg: isDarkMode ? '#fcfc6220' : '#fcfc6240', // icterine with opacity
+      optionSelectedBg: isDarkMode ? '#FCBC6220' : '#FCBC6240', // Hunyadi Yellow with opacity
       optionSelectedColor: isDarkMode ? '#feffea' : '#424242',
-      optionActiveBg: isDarkMode ? '#fcfc6230' : '#fcfc6250', // icterine with opacity
+      optionActiveBg: isDarkMode ? '#FCBC6230' : '#FCBC6250', // Hunyadi Yellow with opacity
     },
     Menu: {
-      itemSelectedBg: isDarkMode ? '#fcfc6220' : '#fcfc6240', // icterine with opacity
+      itemSelectedBg: isDarkMode ? '#FCBC6220' : '#FCBC6240', // Hunyadi Yellow with opacity
       itemSelectedColor: isDarkMode ? '#feffea' : '#424242',
-      itemActiveBg: isDarkMode ? '#fcfc6230' : '#fcfc6250', // icterine with opacity
+      itemActiveBg: isDarkMode ? '#FCBC6230' : '#FCBC6250', // Hunyadi Yellow with opacity
     },
     Card: {
       colorBgContainer: isDarkMode ? '#424242' : '#feffea',
